@@ -12,3 +12,10 @@ data object Home : AppRoute
 data class Details(
     val id: Int
 ) : AppRoute
+
+
+@Serializable
+data object Home1 : AppRoute
+
+@Serializable
+data object Settings : AppRoute

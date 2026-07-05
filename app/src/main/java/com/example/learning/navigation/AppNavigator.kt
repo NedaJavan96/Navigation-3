@@ -21,6 +21,11 @@ class AppNavigator(
             backStack.removeAt(backStack.lastIndex)
         }
     }
+
+    fun navigateToRoot(route: NavKey) {
+        backStack.clear()
+        backStack.add(route)
+    }
 }
 
 @Composable
